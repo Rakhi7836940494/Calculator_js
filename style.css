@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://img.freepik.com/free-vector/mathematics-background-geometric-frame-modern-education-design-vector_53876-156362.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgba(128, 128, 128, 0.37); */
+}
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    color: aliceblue;
+}
+
+#buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* margin-left: 2.5rem; */
+    justify-content: space-evenly;
+}
+
+.container{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    height: 18rem;
+    width: 15rem;
+    margin-top: 10rem;
+    margin-left: 33rem;
+    background-color:antiquewhite;
+}
+
+.design{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    margin-top: 14px;
+    font-size: 1rem;
+}
+
+#display{
+    height: 2.5rem;
+    width: 13rem;
+    margin-left: 1rem;
+    margin-top:10px;
+    border-radius: 9px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    background-color: beige;
+}
+
+
+.number{
+    background-color:rgba(0, 255, 255, 0.466);
+}
+
+.operator{
+    background-color: rgba(11, 128, 0, 0.534);
+}
+
+.clear{
+    background-color: rgba(128, 0, 0, 0.726);
+}
+
+.equal{
+    background-color: rgba(0, 130, 139, 0.897)
+    ;
+}
