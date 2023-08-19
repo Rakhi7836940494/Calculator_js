@@ -3,71 +3,95 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --number_button:#8EB0AA;
+    --operator_button:#4E645B;
+    --equal_button:#467BAA;
+    --clear_button:maroon;
+    --display_background: #E3F2FD;
+    --cal_background:lightgrey;
+    --heading:aliceblue;
+}
+
 
 body{
     background-image: url("https://img.freepik.com/free-vector/mathematics-background-geometric-frame-modern-education-design-vector_53876-156362.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: rgba(128, 128, 128, 0.37); */
 }
 
 h1{
     text-align: center;
-    margin-top: 2rem;
-    color: aliceblue;
+    margin-top: 3rem;
+    color: var(--heading);
+    font-size: 3rem;
+    text-decoration: double;
 }
 
 #buttons{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    /* margin-left: 2.5rem; */
     justify-content: space-evenly;
 }
 
 .container{
-    /* border: 1px solid red; */
     border-radius: 10px;
-    height: 18rem;
-    width: 15rem;
-    margin-top: 10rem;
-    margin-left: 33rem;
-    background-color:antiquewhite;
+    height: 22rem;
+    width: 18rem;
+    margin-top: 7rem;
+    margin-left: 31rem;
+    background-color: var(--cal_background);
+    /* box-shadow:0px 0px 0px 0px darkgray ; */
 }
 
 .design{
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     border: 1px solid darkgray;
     border-radius: 10px;
     margin-top: 14px;
-    font-size: 1rem;
+    font-size: 22px;
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.623);
 }
 
 #display{
-    height: 2.5rem;
-    width: 13rem;
+    height: 3rem;
+    width: 16rem;
     margin-left: 1rem;
-    margin-top:10px;
+    margin-top:15px;
     border-radius: 9px;
-    border: 1px solid lightgray;
+    border-style: none;
+    padding:1rem;
     font-size: 20px;
-    background-color: beige;
+    background-color:var(--display_background);
 }
 
 
 .number{
-    background-color:rgba(0, 255, 255, 0.466);
+    background-color:var(--number_button);
+    border: 1px solid var(--number_button);
+
 }
 
 .operator{
-    background-color: rgba(11, 128, 0, 0.534);
+    background-color: var(--operator_button);
+    border: 1px solid var(--operator_button);
 }
 
 .clear{
-    background-color: rgba(128, 0, 0, 0.726);
+    background-color: var(--clear_button);
+    border: 2px solid var(--clear_button);
+    box-shadow: none;
 }
 
 .equal{
-    background-color: rgba(0, 130, 139, 0.897)
-    ;
+    background-color:var(--equal_button);
+    border: 2px solid var(var(--equal_button));
+}
+
+p{
+    font-size: 1rem;
+    color:white;
+    text-align: center;
+    margin-top: 4rem;
 }
