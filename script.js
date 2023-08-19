@@ -3,13 +3,9 @@ const btn=document.getElementById("buttons");
 
 btn.addEventListener("click",(event)=>{
     let Target=event.target;
-    // console.log(Target);
-    // console.log(Target.classList);
-    // console.log(Target.innerHTML);
 
 if(Target.classList.contains("clear")){
     screen.value="";
-    // console.log("nk");
     
 }
 else if(Target.classList.contains("number")){
@@ -33,7 +29,7 @@ else if(Target.classList.contains("operator")){
 else if(Target.innerHTML==="="){
     if(screen.value.length!=0){
         try{
-            screen.value=eval(screen.value)
+            screen.value=eval(screen.value.replace('x','*'));
         }
         catch(error){
             screen.value="Error";
